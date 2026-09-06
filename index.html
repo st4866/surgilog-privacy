@@ -117,6 +117,7 @@
   <ul>
     <li>Your email address (used to sign in)</li>
     <li>A display name, if you choose to set one</li>
+    <li>A profile picture, if you choose to add one</li>
   </ul>
   <p>When you log a case, SurgiLog stores whatever you choose to enter into the app, which may include:</p>
   <ul>
@@ -161,7 +162,11 @@
     Google Cloud infrastructure — when you're signed in and connected. Photos
     you attach to a case are the one exception: they are stored only in the
     app's private storage on your device and are never uploaded, synced, or
-    transmitted to Firebase or anywhere else. Data in
+    transmitted to Firebase or anywhere else. A profile picture is different —
+    since it's meant to follow your account across your devices, it is
+    uploaded to Firebase Storage (also Google Cloud infrastructure) rather
+    than kept device-only, the same way your email address and display name
+    already are. Data in
     transit is encrypted (HTTPS/TLS). Firebase is the only third party your
     data is shared with, and it acts purely as infrastructure: it does not use
     your data for its own purposes. You can read
@@ -174,6 +179,7 @@
   <ul>
     <li>Edit or delete any individual case</li>
     <li>Delete every case in your logbook, locally and in the cloud</li>
+    <li>Add or remove your profile picture</li>
     <li>Permanently delete your account — this removes your login and every case you've logged, with no recovery</li>
   </ul>
   <p>
